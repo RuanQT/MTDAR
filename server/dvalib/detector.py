@@ -239,7 +239,7 @@ class TextBoxDetector():
         self.textdetector = TextDetector()
         saver = tf.train.Saver()
         ckpt = tf.train.get_checkpoint_state(self.model_path)
-        saver.restore(self.session, ckpt.model_checkpoint_path)
+        saver.restore(self.session, ckpt.latest_checkpoint)
 
     def detect(self,image_path):
         if self.session is None:
