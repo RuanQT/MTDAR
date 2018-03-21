@@ -6,7 +6,7 @@ ANCHOR_SCALES: [16]
 NCLASSES: 2
 USE_GPU_NMS: False
 TRAIN:
-  restore: 1
+  restore: 0
   SOLVER: Adam
   OHEM: False
   RPN_BATCHSIZE: 300
